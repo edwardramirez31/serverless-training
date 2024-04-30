@@ -1,10 +1,92 @@
-name: hello-world-lambda
+name: task01
 build_projects_mapping:
   nodejs: app
 lambdas:
-  hello-world:
+  hello_world:
     runtime: nodejs
 events:
+- operation: deploy
+  initiator: edward
+  bundle_name: task01_240429.222912
+  deploy_name: task01
+  time_start: '2024-04-29T22:29:48Z'
+  time_end: '2024-04-29T22:29:53Z'
+  duration_sec: 4.226
+- operation: build
+  initiator: edward
+  bundle_name: task01_240429.222912
+  time_start: '2024-04-29T22:29:13Z'
+  time_end: '2024-04-29T22:29:18Z'
+  duration_sec: 5.228
+- operation: upload
+  initiator: edward
+  bundle_name: task01_240429.222912
+  time_start: '2024-04-29T22:29:17Z'
+  time_end: '2024-04-29T22:29:18Z'
+  duration_sec: 1.418
+- operation: package_meta
+  initiator: edward
+  bundle_name: task01_240429.222912
+  time_start: '2024-04-29T22:29:16Z'
+  time_end: '2024-04-29T22:29:16Z'
+  duration_sec: 0.003
+- operation: assemble
+  initiator: edward
+  bundle_name: task01_240429.222912
+  time_start: '2024-04-29T22:29:14Z'
+  time_end: '2024-04-29T22:29:16Z'
+  duration_sec: 2.334
+- operation: assemble_node
+  initiator: edward
+  bundle_name: task01_240429.222912
+  time_start: '2024-04-29T22:29:14Z'
+  time_end: '2024-04-29T22:29:16Z'
+  duration_sec: 2.32
+- operation: test
+  initiator: edward
+  time_start: '2024-04-29T22:29:14Z'
+  time_end: '2024-04-29T22:29:14Z'
+- operation: deploy
+  initiator: edward
+  bundle_name: task01_240429.222611
+  deploy_name: hello-world-lambda
+  time_start: '2024-04-29T22:26:27Z'
+  time_end: '2024-04-29T22:26:39Z'
+  duration_sec: 11.507
+- operation: build
+  initiator: edward
+  bundle_name: task01_240429.222611
+  time_start: '2024-04-29T22:26:11Z'
+  time_end: '2024-04-29T22:26:17Z'
+  duration_sec: 5.613
+- operation: upload
+  initiator: edward
+  bundle_name: task01_240429.222611
+  time_start: '2024-04-29T22:26:16Z'
+  time_end: '2024-04-29T22:26:17Z'
+  duration_sec: 1.33
+- operation: package_meta
+  initiator: edward
+  bundle_name: task01_240429.222611
+  time_start: '2024-04-29T22:26:15Z'
+  time_end: '2024-04-29T22:26:15Z'
+  duration_sec: 0.004
+- operation: assemble
+  initiator: edward
+  bundle_name: task01_240429.222611
+  time_start: '2024-04-29T22:26:13Z'
+  time_end: '2024-04-29T22:26:15Z'
+  duration_sec: 2.48
+- operation: assemble_node
+  initiator: edward
+  bundle_name: task01_240429.222611
+  time_start: '2024-04-29T22:26:13Z'
+  time_end: '2024-04-29T22:26:15Z'
+  duration_sec: 2.376
+- operation: test
+  initiator: edward
+  time_start: '2024-04-29T22:26:13Z'
+  time_end: '2024-04-29T22:26:13Z'
 - operation: deploy
   initiator: edward
   bundle_name: task01_240429.221103
@@ -260,13 +342,13 @@ events:
   time_end: '2024-04-29T21:28:27Z'
 locks:
   modification_lock:
-    last_modification_date: '2024-04-29T22:11:29Z'
+    last_modification_date: '2024-04-29T22:29:53Z'
     locked_till: null
     initiator: edward
 latest_deploy:
   initiator: edward
-  bundle_name: task01_240429.221103
-  deploy_name: hello-world-lambda
-  time_start: '2024-04-29T22:11:25Z'
-  time_end: '2024-04-29T22:11:29Z'
-  duration_sec: 3.886
+  bundle_name: task01_240429.222912
+  deploy_name: task01
+  time_start: '2024-04-29T22:29:48Z'
+  time_end: '2024-04-29T22:29:53Z'
+  duration_sec: 4.226
